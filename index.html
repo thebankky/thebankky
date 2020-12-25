@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#00ace1" />
     <meta name="description" content="TheBankky - Profile" />
-    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="icon" href="./favicon.ico" />
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-    <title>☺️ TheBankky - Profile</title>
+    <title>TheBankky - Profile</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 
@@ -24,22 +24,12 @@
         animation: bounce 3.25s infinite ease-in-out;
         font-family: 'Nunito', sans-serif;
         user-select: none;
+        white-space: nowrap;
       }
 
       .text[data-content] {
-        color: #3b6674;
-        z-index: 100;
-        letter-spacing: 0.1vw;
-        transform: scale(0.6);
-      }
-
-      .text[data-content]::before {
-        content: attr(data-content);
-        position: absolute;
-        letter-spacing: 0.1vw;
-        left: 0.2vw;
         color: #404040;
-        z-index: 90;
+        z-index: 100;
       }
 
       .box {
@@ -51,12 +41,15 @@
       @keyframes bounce {
         0% {
           transform: scale(1);
+          text-shadow: 1px 1px 6px #3b3b3b;
         }
         50% {
           transform: scale(0.85);
+          text-shadow: 1px 1px 0px #3b3b3b;
         }
         100% {
           transform: scale(1);
+          text-shadow: 1px 1px 6px #3b3b3b;
         }
       }
     </style>
