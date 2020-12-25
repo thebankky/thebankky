@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#00ace1" />
+    <meta name="description" content="TheBankky - Profile" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <title>☺️ TheBankky - Profile</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+      .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .page h1 {
+        font-size: 7vw;
+        animation: bounce 3.25s infinite ease-in-out;
+        font-family: 'Nunito', sans-serif;
+        user-select: none;
+      }
+
+      .text[data-content] {
+        color: #3b6674;
+        z-index: 100;
+        letter-spacing: 0.1vw;
+        transform: scale(0.6);
+      }
+
+      .text[data-content]::before {
+        content: attr(data-content);
+        position: absolute;
+        letter-spacing: 0.1vw;
+        left: 0.2vw;
+        color: #404040;
+        z-index: 90;
+      }
+
+      .box {
+        padding: 0 32px;
+        position: relative;
+        border: 4px solid #404040;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.85);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root">
+      <div class="page">
+        <div class="box">
+          <h1 class="text" data-content="TheBankky">TheBankky</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
